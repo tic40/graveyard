@@ -1,0 +1,64 @@
+<div class="slideWrap">
+
+	<div class="slideContentWrap" ng-controller="Slide14Controller">
+		<h2 style="font-size: 4em;">Controller</h2>
+		<h4 style="margin-top: 1em;">HTML</h4>
+
+		<pre ng-hide="demoFlg === true"><code style="font-size: 1.6em; color: #666;">
+	<span><</span>html ng-app="StudySessionApp"<span>></span>
+		<span><</span>div ng-controller="GreetingController"</span>></span>
+			<span>{{</span>greeting</span>}}</span>
+		<span><</span>/div</span>></span>
+	<span><</span>/html<span>></span>
+		</code></pre>
+
+		<div ng-hide="demoFlg === false" style='border: 1px solid #ccc; background-color: #f5f5f5; height: 10em; margin-bottom: 0.5em;'>
+
+			<div ng-controller="GreetingController">
+				{{greeting}}
+			</div>
+		</div>
+
+		<button ng-click="demoBtn()" class="btn btn-default">demo</button>
+
+		<h4 style="margin-top:1em;">javascript</h4>
+		<pre><code style="font-size: 1.6em; color: #666;">
+	var app = angular.module("StudySessionApp", []);
+
+	app.controller('GreetingController', function($scope) {
+		$scope.greeting = 'Hello, world!';
+	});
+		</code></pre>
+
+		<ul style="margin-top: 1em; font-size: 2em;">
+			<li ng-show="textNum === 0">Controllers are where we define our apps behavior by defining functions and values</li>
+			<li ng-show="textNum === 1">first line in javascript: declare the app</li>
+			<li ng-show="textNum === 2">decalare the controller: controller is attached to inside our app(StudySessionApp)</li>
+			<li ng-show="textNum === 3">$scope is the glue between application controller and the view.</li>
+			<li ng-show="textNum === 4">in the html: declare ng-app in a tag, and declare ng-controller in a tag which is wrapped a tag declared ng-app</li>
+		</ul>
+		<button class="btn btn-default" ng-hide="textNum === 4" ng-click="next()">next text</button>
+
+	</div>
+
+	<div class="slideFooter">
+		<div ng-hide="lastPageFlg">
+			<nav>
+				<ul class="pager">
+					<li ng-hide="previousPageId === false" class="previous"><a href="./#/{{previousPageId}}"> < prev </a></li>
+					<li ng-hide="nextPageId === false" class="next"><a href="./#/{{nextPageId}}"> next > </a></li>
+				</ul>
+			</nav>
+		</div>
+		<div ng-show="lastPageFlg">
+			<a class="btn btn-default" href="./">TOP</a>
+		</div>
+		<div class="pageCount">
+			{{id}} / {{totalPage}}
+		</div>
+		<div class="progress">
+			<div class="progress-bar" role="progressbar" aria-valuenow="{{ id / totalPage * 100}}" aria-valuemin="0" aria-valuemax="100" style="width: {{ id / totalPage * 100}}%;">
+			</div>
+		</div>
+	</div>
+</div>

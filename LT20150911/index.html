@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="jp" ng-app="SDDStudySessionApp">
+<head>
+	<meta charset="utf-8">
+	<title>SDD study session 20150911</title>
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+	<style>
+		h1 {
+			height: 2.8em;
+			line-height: 2.8em;
+			vertical-align: middle;
+			color: white;
+			background-color: #8dc21f;
+			border-bottom: 0.1em solid #DDD;
+			margin: 0;
+			padding: 0 1em ;
+		}
+		h1 > a {
+			color:#FFF;
+		}
+		h1 > a:link {
+			color:#FFF;
+		}
+		h1 > a:visited {
+			color:#FFF;
+		}
+		h1 > a:hover {
+			color:#FFF;
+			text-decoration:none;
+		}
+
+
+		h2 {
+			font-size: 3em;
+		}
+		h3 {
+			font-size: 2.4em;
+		}
+		h4 {
+			font-size: 2em;
+		}
+		.slideWrap {
+			margin-top: 3em;
+		}
+		.slideContentWrap {
+			margin-top: 2em;
+			font-size: 1.4em;
+			min-height: 420px;
+		}
+		.slideFooter {
+			border-top: 0.1em solid #8dc21f;
+			padding-top: 1em;
+			margin-top: 2em;
+		}
+		.pager {
+			font-size: 1.4em;
+		}
+		.pageCount {
+			text-align: center;
+			font-size: 1.2em;
+		}
+		.previous {
+			background-color: #0099CC;
+		}
+		.red {
+			color: red;
+			font-size: 1.3em;
+		}
+	</style>
+</head>
+
+<body>
+	<h1><a style="" href="./">SDD Study Session</a></h1>
+
+	<div ng-controller="MainController" style="margin:3em;">
+
+		<div ng-view><!-- template is here--></div>
+
+		<!-- Scripts -->
+		<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.1/js/bootstrap.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular-route.min.js"></script>
+		<script src="./js/main.js"></script>
+
+	</div>
+</body>
+</html>
