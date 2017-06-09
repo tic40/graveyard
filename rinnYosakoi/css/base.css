@@ -1,0 +1,210 @@
+@charset "utf-8";
+
+/* ---------------------
+ * FONTSIZE MODEL * 
+ * ---------------------
+ *  63% ->	10pxに相当
+ *  70% ->	11pxに相当
+ *  75% ->	12pxに相当
+ *  82% ->	13pxに相当
+ *  88% ->	14pxに相当
+ *  94% ->	15pxに相当
+ * 100% ->	16pxに相当
+ * 107% ->	17pxに相当
+ * 113% ->	18pxに相当
+ * 119% ->	19pxに相当
+ * 125% ->	20pxに相当
+ * --------------------- */
+
+
+/* ========BASIC======== */
+* {
+   font-family:"Hiragino Kaku Gothic Pro",HiraKakuPro-W3,"ヒラギノ角ゴ Pro W3","MS P ゴシック",sans-serif;
+   color:#333;
+}
+
+body {
+   letter-spacing:1px;
+   line-height:1.6;
+}
+
+h1,h2,h3,h4,h5,h6 {
+   margin:0;
+   padding:0;
+   font-weight:normal;
+   font-size:88%;/* 14px相当 */
+}
+
+p {
+   margin:0 0 1em 0;
+   padding:0;
+   color:#666666;
+   font-size:88%;/* 14px相当 */
+}
+
+a {
+   color:#68903C;
+   text-decoration:none;
+}
+
+dd{
+ color:#666666;
+ text-decoration:none;
+ font-size: 80%;
+}
+
+a:hover {
+   color:#92C45B;
+   border-bottom:1px solid #92C45B;
+}
+
+img {
+    border-style:none;
+}
+
+/* ========id======== */
+#header {	
+	width:950px;
+	height:300px;
+	margin:20px auto;
+	padding:10px 0px 0px 50px;
+	background: url(../img/top.png) no-repeat;
+	background-position: center;	
+}
+
+#container {
+   width:850px;
+   margin:20px auto;
+   padding:0 20px;
+   border:1px solid #CECFCE;
+   background:#fff;
+}
+
+#menu {
+   float:left;
+   width:800px;
+   margin:10px 30px;
+   background:#333;
+   font-size:150%;
+   }
+#contents {
+	float:left;
+	width:590px;
+   clear:both;
+   padding: 20px 20px 0 0;
+}
+#side{
+	float:left;
+	width:240px;
+	padding:40px 0px 0px 0px; 
+}
+#side img{
+	border:1px solid #D4D0C8;
+}
+
+
+#footer {
+   width:800px;
+   clear:both;
+   padding:10px 0;
+   border-top:1px solid #CECFCE;
+}
+#footer a {
+	font-size: 70%;
+   color:#666666;
+   text-decoration:none;
+}
+/* ========class======== */
+
+.bannar{
+	margin-bottom:10px;
+}
+
+.totop {
+   padding:10px 0;
+   text-align:right;
+   font-size:82%;/* 13px相当 */
+   clear:both;
+   }
+
+.entry{
+	border-bottom:1px solid #CECFCE;
+	padding: 10px 20px;
+	margin-bottom:20px;
+}
+.staff{
+	border-bottom:1px solid #CECFCE;
+	padding: 20px 10px 30px 0px;
+}
+
+/* ========MENU CUSTOMIZE======== */
+#menu ul {
+   list-style:none;
+   margin:0;
+   padding:0;
+   font-size:88%;
+   font-weight:700;
+   
+}
+#menu li {
+   float:left;
+   margin:0;
+   padding:0;
+}
+#menu li a {
+   display:block;
+   padding:10px 17px;
+   
+   color:#fff;
+}
+
+#menu li a:hover {
+   color:#fff;
+   background-color:#68903C;
+   border:none;
+}
+
+#menu .on {
+   background-color:#68903C;
+   color:#fff;
+}
+
+
+/* ========CONTENTS CUSTOMIZE======== */
+#contents h2 {
+   font-weight:bold;
+   font-size:100%;/* 16px相当 */
+   border-left:5px solid #333;
+   margin:5px 0;
+   padding:2px 0 0 10px;
+   line-height:2.0;
+   background-color:#CCFFCC;
+}
+
+#contents h3 {
+   font-weight:bold;
+   font-size:94%;/* 15px相当 */
+}
+
+/* ========STAFF CUSTOMIZE========= */
+.staff p{
+	font-size:13px;
+	color:#666666;
+}
+.staff h3{
+	font-size:17px;
+	color:#666666;
+}
+.staff img{
+	float:left;
+	margin-right:10px;
+}
+
+
+/* ========FOOTER CUSTOMIZE======== */
+address {
+   text-align:center;
+   font-size:63%;/* 10px相当 */
+   font-style:normal;
+   padding:20px 0;
+}

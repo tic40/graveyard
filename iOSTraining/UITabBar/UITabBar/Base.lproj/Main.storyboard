@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="7DW-o5-iqA">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="Jqu-lY-DLS">
+            <objects>
+                <viewController id="zak-ew-bgy" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="mQp-JB-bNK"/>
+                        <viewControllerLayoutGuide type="bottom" id="L1C-kf-aaA"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="k7E-ue-GwH">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Featured" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fqs-qi-dCg">
+                                <rect key="frame" x="94" y="346" width="69" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" systemItem="featured" id="E4M-zH-eGD"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6wd-a6-Soo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1748" y="314"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="x7v-5U-T39">
+            <objects>
+                <viewController id="9Zc-TJ-gaW" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="vGP-7b-nmB"/>
+                        <viewControllerLayoutGuide type="bottom" id="fZv-iy-fDu"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="6C2-Gr-dpm">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Download" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UYO-Rl-Bqm">
+                                <rect key="frame" x="101" y="148" width="77" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" systemItem="downloads" id="Sow-D1-Idp"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ISq-kX-fo3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1748" y="1609"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="qlT-86-bxG">
+            <objects>
+                <viewController id="Nyj-zB-sVI" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="6fk-76-8Ef"/>
+                        <viewControllerLayoutGuide type="bottom" id="Asv-ws-bIJ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="MNE-zZ-hjQ">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Bookmark" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hvj-rT-Kyj">
+                                <rect key="frame" x="97" y="98" width="78" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" systemItem="bookmarks" id="Cpt-TG-j2P"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ybw-1b-NB1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1748" y="957"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="zsA-kW-0FI">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="7DW-o5-iqA" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="PGX-wa-NDD">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="zak-ew-bgy" kind="relationship" relationship="viewControllers" id="F7U-T7-gpe"/>
+                        <segue destination="Nyj-zB-sVI" kind="relationship" relationship="viewControllers" id="7E3-Rx-vnT"/>
+                        <segue destination="9Zc-TJ-gaW" kind="relationship" relationship="viewControllers" id="ym4-aQ-oYD"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MDD-nl-whk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="286" y="314"/>
+        </scene>
+    </scenes>
+</document>

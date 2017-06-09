@@ -1,0 +1,186 @@
+@charset "utf-8";
+
+* {
+   font-family:"Hiragino Kaku Gothic Pro",HiraKakuPro-W3,"ヒラギノ角ゴ Pro W3","MS P ゴシック",sans-serif;
+   color:#333;
+}
+
+body {
+	text-align:center;
+   letter-spacing:1px;
+   line-height:1.5;
+   font-size: 95%;
+}
+
+p,h2{
+	color:#333333;
+}
+
+a {
+   color:#0099FF;
+   text-decoration:none;
+}
+
+
+a:hover {
+   color:#FF66FF;
+}
+
+img {
+border: none;
+
+}
+
+pre{
+	margin:auto;
+	text-align:left;
+}
+
+/* ===============id======================== */
+
+#container {
+   width:930px;
+   padding:5px;
+   margin:20px auto;
+}
+
+
+#header {
+	width:930px;
+	padding:5px;
+	margin:20px auto;
+	border-bottom: 1px solid #D4D0C8;
+}
+
+  
+#webcomic{
+	float:left;
+	width:350px;
+	margin:10px auto;
+	padding:10px;
+	background-color:#FFFFFF;
+	border-right:1px solid #D4D0C8;
+	
+} 
+
+#gallery
+{
+	float:right;
+	width:450px;
+	margin:10px auto;
+	padding:0 0 0 20px;
+	border-bottom:1px solid #D4D0C8;
+}
+
+#movie
+{
+	float:left;
+	width:420px;
+	margin:10px auto;
+	padding:10px;
+	border-right:1px solid #D4D0C8;
+	border-top:1px solid #D4D0C8;
+	
+}
+
+#contact{
+	float:left;
+	width:350px;
+	margin:10px auto;
+	padding:20px;
+}
+
+#footer{
+width:850px;
+margin:20px auto;
+text-align:center;
+clear:both;
+padding:60px 0 0 0;
+
+}   
+
+#introduce{
+	width:930px;
+	margin: auto;
+}
+
+
+
+#comic{
+	margin:20px auto;
+}
+
+   
+/* =================class================= */   
+div.block {
+		clear: both;
+		font-size:90%;
+}
+   
+
+div.blockL {
+	border-bottom:1px solid #CECFCE;
+	padding: 20px 10px 30px 0px;
+}
+
+.caution{
+	color:red;
+}
+.smallp{
+	font-size:60%;
+	color:#999999;
+}
+/* ================================== */
+#header a { 
+	font-size: 30pt;
+}
+
+#webcomic ul{
+	list-style-type: none;
+
+}
+
+#webcomic li{
+	list-style-type: none;
+	text-align:left;
+}
+
+
+#gallery ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+			
+#gallery li {
+	float: left;
+	margin: 0px 10px 5px 0px;
+	padding: 0;
+}
+
+#gallery img {
+		width: 60px;
+		height:60px;
+		padding: 5px;
+		border: 1px solid #ccc;
+		background-color: #fff;
+}
+
+#movie object{
+		padding:10px;
+}
+
+#comic img{
+		width: 452px;
+		height:640px;
+		padding: 5px;
+		margin:20px;
+		border: 1px solid #ccc;
+		background-color: #fff;
+
+}
+
+address {
+   text-align:center;
+   font-size:80%;
+}

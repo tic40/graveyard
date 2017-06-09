@@ -1,0 +1,74 @@
+
+
+* { padding: 0; margin: 0;}
+
+
+A:link {
+  color: dodgerblue; /* 未訪問リンクの色 */
+  text-decoration: none; /* 文字装飾 */
+}
+ A:visited {
+  color: royalblue; /* 訪問済リンクの色 */
+  text-decoration: none; /* 文字装飾 */
+}
+
+body {
+ font-family: Arial, Helvetica, sans-serif;
+ font-size: 13px;
+
+}
+
+#wrapper { 
+ margin: 0 auto;
+ width: 922px;
+}
+#faux {
+ background: url(.gif);
+ margin-bottom: 0px;
+ overflow: auto; /* Paul O Brien Fix for IE www.pmob.co.uk */
+ width: 100%
+}
+#header {
+ color: #333;
+ width: 902px;
+ padding: 10px;
+ height: 120px;
+ margin: 10px 0px 0px 120px;
+ background-color: white;
+}
+#leftcolumn { 
+ display: inline;
+ color: #333;
+ margin: 10px;
+ padding: 0px;
+ width: 195px;
+ float: left;
+}
+#rightcolumn { 
+ float: right;
+ color: #333;
+ margin: 10px;
+ padding: 0px;
+ width: 683px;
+ display: inline;
+ position: relative;
+}
+#footer { 
+ width: 902px;
+ clear: both;
+ color: #333;
+background-color: paleturquoise;
+ margin: 0px 0px 10px 0px;
+ padding: 10px;
+}
+.clear { clear: both; background: none; }
+
+.date{ 
+font-weight: bold;
+color: white;
+background-color: dodgerblue; }
+
+.entry{ 
+font-weight: bold;
+color: blue;
+}

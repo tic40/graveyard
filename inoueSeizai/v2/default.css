@@ -1,0 +1,193 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*************************************************テキストカラー・リンクテキストカラー************************/
+
+body{
+	color:#333333;/*通常のテキストカラー*/
+	text-align:center;
+	}
+
+a{
+	color:#0099CC;/*通常のリンクテキストカラー*/
+	text-decoration:none;/*マウスが乗った時下線を表示（つけない場合は underline を none へ）*/
+	}
+a:hover{
+	color:#FF66FF;/*マウスが乗った時の通常のリンクテキストカラー*/
+	text-decoration:none;/*マウスが乗った時下線を表示（つけない場合は underline を none へ）*/	
+	}
+/*************************************************フォントサイズ調整******************************************/
+body {
+	font-family:'Hiragino Kaku Gothic Pro',	'ヒラギノ角ゴ Pro W3', 'Osaka',	'ＭＳ Ｐゴシック', sans-serif;/*フォント種*/
+	font-size:12px;/*フォントサイズfirefox用*/
+	*font-size:90%;/*フォントサイズIE7.0用（固定にする場合はpx指定してください）*/
+	*font:90%;/*フォントサイズIE6.0用（固定にする場合はpx指定してください）*/
+	}
+	
+*{ 
+margin:0; padding:0;
+}
+
+img{ 
+border:0;
+}
+	
+table,div{
+	margin:auto;
+	}
+
+#container{
+	width:800px;
+	margin:auto;
+	}
+
+#header{
+	margin:30px auto;
+}
+
+h1{
+	height:20px;
+	line-height:16px;
+	font-size:30px;
+	color:#333333;
+	font-weight:normal;
+	text-indent:10px;
+	padding:6px 0 20px 0;
+	}
+
+h2{
+	height:38px;
+	font-weight:normal;
+	text-indent:10px;
+	display:block;
+	padding:6px 0 0 0;
+	}
+h2 a:hover{
+	color:#333333;
+	text-decoration:none;
+	}
+	
+	
+/*ヘッダーメニュー*/			
+#menu{
+	text-align:center;
+	font-size:10px;
+	margin:30px,auto;
+	height:44px;
+	color:#FFFFFF;
+	}
+#menu ul{
+	list-style-type:none;
+	padding:1px 0 0 150px;
+	}
+#menu ul li{
+	float:left;
+	padding:0 10px 0 8px;
+	text-align:center;
+	height:42px;
+	line-height:42px;
+	}
+#menu a{
+	color: white;
+	font-size:12px;
+	letter-spacing:1px;
+	text-decoration:none;
+	height:25px;
+	vertical-align:middle;
+	margin:0 4px 0 4px;
+	}
+
+#menu a:hover{
+	color: black;
+	}
+	
+	
+#house img{
+		margin:10px;
+		padding: 5px;
+		border: 1px solid #ccc;
+		background-color: #fff;
+	}	
+
+#contents{
+	margin:50px auto;
+}	
+
+#contents p{
+		font-size:22px;
+		margin-bottom:20px;
+	}
+
+/*フッターコピーライト部分*/	
+#copy{
+	margin:auto;
+	text-align:center;
+	line-height:41px;
+	font-size:14px;
+	color:black;
+	clear:both;
+	}
+#copy a{
+	color:blue;
+	text-decoration:none;
+	}
+#copy a:hover{
+	color:#31CFFF;
+	}
+	
+	
+/* tableの共通設定
+----------------------------------------------------------- */
+table	{
+	border-collapse: collapse;	
+	border-spacing: 0;
+	width: 80%;
+	margin-bottom: 30px;
+}
+th, td	{
+	padding: 10px 20px;
+	color: #1D5C79;
+}
+
+table#table-01 {
+    width: 500px;
+    border: 1px #E3E3E3 solid;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+table#table-01 th {
+	height:20px;
+	line-height:16px;
+	color:#333333;
+	font-weight:normal;
+	font-size:16px;
+	
+    padding: 10px;
+    border: #E3E3E3 solid;
+    border-width: 0 0 1px 1px;
+    background: #F5F5F5;
+    text-align: left;
+}
+table#table-01 td {
+	height:20px;
+	line-height:16px;
+	color:#333333;
+	font-weight:normal;
+	text-indent:10px;
+	font-size:15px;
+	
+    padding: 5px;
+    border: 1px #E3E3E3 solid;
+    border-width: 0 0 1px 1px;
+    text-align: left;
+}
+
+/*----------------------------------------------------------- */
+.teble02 th	{
+	border-bottom: 2px solid #1D5C79;
+}
+.table02 td	{
+	border-bottom: 1px solid #DDD;
+}
+
