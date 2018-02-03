@@ -1,0 +1,188 @@
+.panel_contents {
+  .panel-header {
+    padding: 10px;
+
+    .banana-chatbox & {
+      border-bottom: 1px dashed $border-color;
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.tab_contents {
+  .badge {
+    &:after {
+      background: $accent-color;
+      height: 15px;
+      right: auto;
+      top: 5px;
+      transform: translate(.1rem, -.5rem);
+    }
+  }
+}
+
+// チャットボックス Start
+.column_chat {
+  .tile {
+    .tile-content {
+      &:not(:first-child) {
+        padding-left: 5px;
+      }
+    }
+  }
+
+  .logo {
+    text-align: center;
+
+    img {
+      width: 100px;
+    }
+  }
+}
+
+.column_scroll {
+  height: 100%;
+  overflow-y: scroll;
+  padding: 5px 0;
+  padding-right: 10px;
+  position: relative;
+}
+
+.avatar_tutor {
+  background: $gray-color;
+  border: 1px solid $gray-color-light;
+  position: relative;
+
+  &:before {
+    color: $light-color;
+    content: '\e902';
+    font-family: 'cosmo';
+    font-size: 1.4rem;
+    left: 50%;
+    margin-left: -.6rem;
+    margin-top: -.58rem;
+    position: absolute;
+    top: 50%;
+  }
+}
+
+.message-body {
+  border: 1px solid $border-color;
+  clear: both;
+  display: inline-block;
+  font-size: .75rem;
+  margin-bottom: 3px;
+  max-width: 95%;
+  padding: 5px 8px;
+  word-break: break-word;
+
+  p {
+    line-height: 1.5;
+    margin-bottom: 0;
+  }
+
+  .system_message & {
+    border: 0;
+    display: block;
+    max-width: 100%;
+    width: 100%;
+
+    p {
+      font-size: .7rem;
+      line-height: 1rem;
+      text-align: center;
+    }
+  }
+
+  .student_message & {
+    background: lighten($primary-color, 55);
+    color: darken($gray-color, 50);
+    float: right;
+
+    .message_time {
+      text-align: right;
+    }
+  }
+}
+
+.message_time {
+  clear: both;
+  color: $gray-color;
+  display: block;
+  font-size: .5rem;
+  margin-bottom: 3px;
+
+  .student_message & {
+    float: right;
+  }
+}
+
+.chat_input {
+  position: relative;
+  width: 100%;
+
+  .btn {
+    height: 65px;
+    width: 45px;
+  }
+
+  .loading {
+    left: 0;
+  }
+}
+
+// チャットボックス End
+
+
+// レッスンメモ Start
+textarea {
+  resize: none;
+
+  &.form-input {
+    height: 65px;
+    overflow-x: hidden;
+
+    &.form_memo {
+      height: 100%;
+      margin-bottom: 0;
+    }
+  }
+}
+
+.column_memo {
+  height: 100%;
+  position: relative;
+}
+
+.msg_autosave {
+  color: $gray-color;
+  display: block;
+  font-size: 10px;
+  margin-bottom: 3px;
+  text-align: right;
+}
+
+.btn_save {
+  position: relative;
+}
+
+.tab_content_alert {
+  background-color: lighten($warning-color, 45);
+  border: 2px solid $warning-color;
+  color: $warning-color;
+  display: block;
+  height: 25px;
+  padding: 3px 10px;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  z-index: 50;
+
+  &.chatbox_alert {
+    top: -25px;
+  }
+
+  &.memo_alert {
+    bottom: 0;
+  }
+}

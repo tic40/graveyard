@@ -1,0 +1,211 @@
+.navbar {
+  background: $bg-color;
+  padding: .25rem .5rem;
+}
+// action button Start
+
+.action_button {
+  margin-bottom: -6px;
+  margin-right: 1rem;
+  position: relative;
+
+  span {
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    width: 50px;
+
+    &:after {
+      content: '';
+      display: block;
+      font-size: .4rem;
+      text-align: center;
+    }
+  }
+
+  .btn_phrase {
+    &:after {
+      content: 'フレーズ';
+    }
+  }
+
+  .btn_help {
+    &:after {
+      content: 'ヘルプ';
+    }
+  }
+
+  .btn_mail {
+    &:after {
+      content: '問い合わせ';
+    }
+  }
+
+  .material-icons {
+    vertical-align: baseline;
+  }
+}
+// action button End
+// Layout button Start
+.layout_button {
+  background: $bg-color;
+  margin-bottom: -3px;
+  margin-right: 50px;
+  margin-top: 3px;
+
+  .btn_label {
+    display: block;
+    font-size: .4rem;
+    text-align: center;
+  }
+}
+
+.layout_himawari,
+.layout_banana {
+  background: transparent;
+  border: 0;
+  color: lighten($primary-color, 30);
+  cursor: pointer;
+  display: inline-block;
+  height: auto;
+  outline: none;
+  padding: 0;
+
+  i {
+    font-size: 1.5rem;
+    vertical-align: middle;
+  }
+
+  &.is-active {
+    color: $primary-color;
+  }
+
+  &:hover,
+  &:active,
+  &:focus {
+    color: lighten($primary-color, 10);
+    outline: none;
+    text-decoration: none;
+  }
+}
+
+.toast_layout {
+  background: lighten($primary-color, 58);
+  border: 3px solid lighten($primary-color, 25);
+  color: $body-font-color;
+  -webkit-filter: drop-shadow(-1px 1px 0 lighten($primary-color, 40));
+  margin-left: -70px;
+  position: absolute;
+  top: 50px;
+  width: 200px;
+  z-index: 1000;
+
+  &:before {
+    border: 10px solid transparent;
+    border-bottom: 10px solid lighten($primary-color, 25);
+    content: '';
+    left: 50%;
+    margin-left: -10px;
+    position: absolute;
+    top: -20px;
+  }
+
+  dl {
+    margin: 0;
+
+    dd {
+      margin: 0;
+    }
+  }
+
+  .mode_item {
+    display: block;
+    margin-top: 4px;
+
+    i {
+      color: $body-font-color;
+      font-size: .8rem;
+      margin-right: 5px;
+      vertical-align: text-bottom;
+    }
+
+    span {
+      font-size: .6rem;
+    }
+  }
+}
+
+// Layout button End
+
+.tutor_name {
+  font-size: 1.4rem;
+
+  small {
+    font-size: .8rem;
+  }
+}
+
+.time_left {
+  font-size: .8rem;
+  text-align: center;
+
+  small {
+    font-size: .7rem;
+    font-weight: normal;
+    margin-right: .5rem;
+    vertical-align: text-top;
+  }
+
+  .time_left_count {
+    span {
+      font-size: 1.4rem;
+    }
+  }
+
+  .is-up {
+    color: $accent-color;
+  }
+}
+
+.lesson-time-slide {
+  &-enter-active {
+    transition: all .3s ease;
+  }
+
+  &-leave-active {
+    transition: all .3s ease;
+  }
+
+  &-enter {
+    opacity: 0;
+    transform: translateY(+10px);
+  }
+
+  &-leave-to {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+}
+
+.exit_button {
+  .btn {
+    background: desaturate($primary-color, 30);
+    color: $light-color;
+
+    &:hover {
+      background: desaturate($primary-color, 40);
+      color: $light-color;
+    }
+  }
+}
+
+.progress_wrap {
+  height: .35rem;
+  margin-bottom: .5rem;
+
+  .progress {
+    border-radius: 0;
+    height: .35rem;
+    vertical-align: top;
+  }
+}

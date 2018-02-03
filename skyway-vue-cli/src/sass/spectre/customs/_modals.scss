@@ -1,0 +1,132 @@
+// Modal window
+.confirmation_dialog {
+  .v--modal {
+    background-color: none;
+    box-shadow: 0;
+    padding: 15px;
+    text-align: center;
+  }
+
+  img {
+    max-width: 300px;
+    margin-top: 10px;
+  }
+  &.tutorial_dialog {
+    img {
+      max-width: 600px;
+    }
+  }
+
+  .btn_close {
+    float: right;
+  }
+
+  &.lesson_dialog {
+    .v--modal {
+      padding: 20px;
+    }
+  }
+
+  &.confirm_webcam {
+    .dialog_content {
+      margin-bottom: 15px;
+      padding: 20px 10px 10px;
+    }
+
+    .dialog_buttons {
+      i {
+        margin-right: 5px;
+        vertical-align: text-bottom;
+      }
+    }
+
+    .divider {
+      clear: both;
+    }
+
+    .sub_content {
+      margin-top: 15px;
+    }
+
+  }
+
+  .dialog_content {
+    strong {
+      color: $primary-color;
+      display: block;
+      font-size: 1rem;
+      margin-bottom: .25rem;
+    }
+
+    p {
+      line-height: 1.75;
+      margin-bottom: 0;
+    }
+
+    .notes {
+      font-size: .8rem;
+      line-height: 1.25;
+      margin-top: 10px;
+      color: darken($gray-color, 15);
+    }
+  }
+
+  .mi-lg {
+    display: block;
+    font-size: 4.5rem;
+  }
+
+  &.is-warning {
+    strong {
+      color: $warning-color;
+    }
+
+    .mi-lg {
+      color: lighten($warning-color, 40);
+    }
+
+    .sub_content {
+      strong {
+        color: darken($gray-color, 25);;
+      }
+    }
+  }
+
+  &.is-normal {
+    strong {
+      color: darken($gray-color, 30);
+    }
+    &.device_permission {
+      strong {
+        display: block;
+        margin-bottom: 15px;
+        font-size: 1rem;
+      }
+
+    }
+    .mi-lg {
+      color: $gray-color-light;
+    }
+  }
+
+  &.is-error {
+    strong {
+      color: $error-color;
+    }
+
+    .mi-lg {
+      color: lighten($error-color, 40);
+    }
+  }
+
+  .dialog_buttons {
+    margin-top: .75rem;
+
+    .btn {
+      height: auto;
+      line-height: 1.3rem;
+      margin: 0 5px;
+      padding: 5px 15px;
+    }
+  }
+}

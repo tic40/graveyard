@@ -1,0 +1,47 @@
+@font-face {
+  font-family: 'cosmo';
+  font-style: normal;
+  font-weight: normal;
+  src: url('~@sass/fonts/cosmo.ttf') format('truetype'), url('~@sass/fonts/cosmo.woff') format('woff'), url('~@sass/fonts/cosmo.svg#cosmo') format('svg');
+}
+
+[class^='co-'],
+[class*='co-'] {
+  font-family: 'cosmo';
+  -webkit-font-smoothing: antialiased;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  line-height: 1;
+  -moz-osx-font-smoothing: grayscale;
+  speak: none;
+  text-transform: none;
+}
+$co-avatar_tutor_off: '\e903';
+$co-avatar_tutor: '\e902';
+$co-layout_banana: '\e900';
+$co-layout_himawari: '\e901';
+
+.co-avatar_tutor_off {
+  &:before {
+    content: $co-avatar_tutor_off;
+  }
+}
+
+.co-avatar_tutor {
+  &:before {
+    content: $co-avatar_tutor;
+  }
+}
+
+.co-layout_banana {
+  &:before {
+    content: $co-layout_banana;
+  }
+}
+
+.co-layout_himawari {
+  &:before {
+    content: $co-layout_himawari;
+  }
+}

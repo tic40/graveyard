@@ -1,0 +1,361 @@
+// Video Start
+.video_contents {
+  background: darken($gray-color, 5);
+  margin-bottom: 10px;
+  position: relative;
+
+  &.banana-video {
+    margin-bottom: 0;
+  }
+}
+
+.video_area_message {
+  background: lighten($gray-color, 15);
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  z-index: 10;
+
+  .himawari-video & {
+    height: 300px;
+    margin-top: -150px;
+  }
+
+  .banana-video & {
+    height: 400px;
+    margin-top: -200px;
+  }
+
+  .system_message {
+    @at-root .himawari-video &{
+      margin-left: -165px;
+      width: 330px;
+    }
+
+    @at-root .banana-video &{
+      margin-left: -190px;
+      width: 380px;
+    }
+    color: darken($primary-color, 20);
+    font-size: .8rem;
+    left: 50%;
+    margin-top: -5rem;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    width: 100%;
+    z-index: 10;
+
+    &:before {
+      color: lighten($gray-color, 25);
+      content: '\e04c';
+      display: block;
+      font-family: 'material icons';
+      font-size: 5rem;
+      margin-top: 1rem;
+      position: absolute;
+      text-align: center;
+      top: 50%;
+      vertical-align: middle;
+      width: 100%;
+      z-index: 10;
+    }
+
+    &.before_start {
+      margin-top: -2rem;
+
+      &:before {
+        margin-top: -1.5rem;
+      }
+    }
+
+    &.before_start_connected {
+      margin-top: -1rem;
+
+      &:before {
+        margin-top: -2.75rem;
+      }
+    }
+
+    &.started_within {
+      margin-top: -3rem;
+
+      &:before {
+        margin-top: 0;
+      }
+    }
+
+    &.started_after {
+      margin-top: -3.5rem;
+    }
+
+    &.lesson_ended {
+      margin-top: -2rem;
+
+      &:before {
+        margin-top: -1.5rem;
+      }
+    }
+
+    &.before_start_connected,
+    &.tutor_disconnected,
+    &.tutor_camera_off {
+      &:before {
+        content: '\e902';
+        font-family: 'cosmo';
+      }
+    }
+
+    &.tutor_camera_off {
+      margin-top: -1rem;
+
+      &:before {
+        margin-top: -2.5rem;
+      }
+    }
+
+    &.tutor_disconnected {
+      margin-top: -4.5rem;
+    }
+
+    dl {
+      margin: 0;
+      padding: 0 5px;
+      position: absolute;
+      width: 100%;
+      z-index: 11;
+    }
+
+    dt {
+      font-size: 1rem;
+    }
+
+    dd {
+      margin-bottom: 0;
+    }
+
+    .btn {
+      margin-top: 8px;
+      padding: 3px 15px;
+    }
+  }
+
+  .spinner {
+    bottom: 80px;
+    left: 50%;
+    position: absolute;
+  }
+}
+
+.tutor_wrap {
+  display: flex;
+  margin: 0 auto;
+  max-width: 100%;
+  position: relative;
+  width: 100%;
+
+  .himawari-video & {
+    height: 300px;
+    max-width: 400px;
+  }
+
+  .banana-video & {
+    height: 100%;
+  }
+}
+
+.media_tutor {
+  margin: 0 auto;
+  position: relative;
+  text-align: center;
+  z-index: 5;
+
+  .himawari-video & {
+    height: 300px;
+    max-width: 100%;
+    width: 400px;
+  }
+
+  .banana-video & {
+    height: 100%;
+    max-width: 100%;
+    min-width: 668px;
+  }
+}
+
+.media_student {
+  background: $light-color;
+  border: 1px solid $border-color;
+  bottom: 1px;
+  overflow: hidden;
+  position: absolute;
+  right: 1px;
+  text-align: center;
+  z-index: 15;
+
+  .himawari-video & {
+    height: 99px;
+    width: 132px;
+  }
+
+  .banana-video & {
+    height: 180px;
+    width: 240px;
+  }
+
+  .student_video {
+    margin-top: 25px;
+    max-height: 70%;
+    max-width: 70%;
+  }
+
+  .videocam_control {
+    font-size: .5rem;
+    height: 1.25rem;
+    padding: 0 5px;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    z-index: 1000;
+  }
+}
+
+.student-video-wrap {
+  background: url(#{$cosmourl}/image/avatar_student.png) no-repeat 0 0;
+  background-size: cover;
+  height: 100%;
+  position: relative;
+  width: 100%;
+
+  video {
+    height: 100%;
+    transform: scale(-1, 1);
+    width: 100%;
+  }
+
+  img {
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+}
+// Video End
+
+// range Start
+.controls {
+  bottom: 5px;
+  position: absolute;
+  z-index: 250;
+
+  .control {
+    display: inline-flex;
+  }
+
+  &.tutor_controls {
+    left: 5px;
+    width: 60%;
+
+    .volume_control {
+      bottom: 0;
+      height: 16px;
+      left: 65px;
+      position: absolute;
+      width: 80px;
+    }
+
+    .volume_switch,
+    .connect_switch {
+      i {
+        vertical-align: text-bottom;
+      }
+    }
+  }
+
+  .student_wrap & {
+    right: 5px;
+  }
+}
+
+.volume_range {
+  &[type='range'] {
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: $light-color;
+    border: 1px solid $gray-color;
+    border-radius: 4px;
+    height: 6px;
+    width: 100%;
+
+    &:focus,
+    &:active {
+      outline: none;
+    }
+
+    &::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      appearance: none;
+      background-color: $light-color;
+      border: 1px solid rgba($gray-color-dark, .4);
+      border-radius: 50%;
+      cursor: pointer;
+      display: block;
+      height: 12px;
+      position: relative;
+      width: 12px;
+    }
+
+    &:active {
+      &::-webkit-slider-thumb {
+        box-shadow: 0 0 0 4px rgba($light-color, .6);
+        transition: .4s;
+      }
+    }
+  }
+}
+// range End
+
+.phrase-box {
+  background-color: $light-color;
+  margin: 0 auto;
+  padding: .25em 1em;
+  position: relative;
+  text-align: center;
+  width: 100%;
+  z-index: 1;
+
+  &:before {
+    background-color: rgba(255, 255, 255, .5);
+    left: 0;
+    top: 0;
+    z-index: -1;
+  }
+
+  &:before,
+  &:after {
+    border-radius: 2px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, .1);
+    content: '';
+    height: 100%;
+    position: absolute;
+    width: 100%;
+  }
+
+  &:after {
+    background-color: #d6d6d6;
+    left: 3px;
+    top: 3px;
+    z-index: -2;
+  }
+
+  .phrase_en {
+    font-size: .9rem;
+    font-weight: bold;
+    margin-bottom: .5em;
+  }
+
+  .phrase_ja {
+    margin-bottom: 0;
+  }
+}
+// Phrase End

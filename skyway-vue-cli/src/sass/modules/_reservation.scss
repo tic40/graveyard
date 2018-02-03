@@ -1,0 +1,35 @@
+// 予約内容 Start
+.lesson_schedule {
+  margin-left: 5px;
+
+  i {
+    font-size: 16px;
+  }
+}
+
+.reservation_detail_wrap {
+  border: 1px solid $border-color;
+  margin-bottom: 10px;
+}
+
+.reservation_detail {
+  background: $bg-color;
+  padding: .25rem .8rem;
+}
+
+.reservation_title {
+  font-weight: bold;
+}
+
+.lesson_request {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.popover {
+  .card {
+    width: 400px;
+    word-wrap: break-word;
+  }
+}
+// 予約内容 End

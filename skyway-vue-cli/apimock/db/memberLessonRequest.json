@@ -1,0 +1,63 @@
+{
+  "can_choose": "2",
+  "registration_id": "1",
+  "is_setting": {
+    "use_curriculum": "1",
+    "material_id": "27",
+    "material_name": "Daily News Article",
+    "lesson_procedure": "1,2,3",
+    "error_correction": "2",
+    "other_request": "I'll do my best!"
+  },
+  "same_as_last_time": "1",
+  "can_use_curriculum": "1",
+  "curriculum": {
+    "id": "92",
+    "name_jp": "実践ビジネス レベル4-1",
+    "can_use": "1"
+  },
+  "material_list": [
+    {
+      "category": "指定しない",
+      "list": [
+        {
+          "id": "0",
+          "name_jp": "指定しない"
+        }
+      ]
+    },
+    {
+      "category": "オリジナル教材",
+      "list": [
+        {
+          "id": "1",
+          "name_jp": "レアジョブ入門 初級"
+        },
+        {
+          "id": "2",
+          "name_jp": "日常英会話 基礎"
+        }
+      ]
+    },
+    {
+      "category": "実践ビジネス教材",
+      "list": [
+        {
+          "id": "3",
+          "name_jp": "実践ビジネスLv3"
+        },
+        {
+          "id": "4",
+          "name_jp": "実践ビジネスLv4"
+        }
+      ]
+    }
+  ],
+  "recommend": {
+    "use_curriculum": "1",
+    "material_id": "3",
+    "lesson_procedure": "1,2",
+    "error_correction": "2",
+    "other_request": "other request"
+  }
+}

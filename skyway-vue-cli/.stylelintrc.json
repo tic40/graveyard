@@ -1,0 +1,12 @@
+{
+  "plugins": [
+    "stylelint-order"
+  ],
+  "extends": "stylelint-config-recommended",
+  "rules": {
+    "indentation": 2,
+    "number-leading-zero": "never",
+    "string-quotes": "single",
+    "order/properties-alphabetical-order": true
+  }
+}

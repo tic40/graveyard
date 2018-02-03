@@ -1,0 +1,63 @@
+.alert {
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+
+  strong {
+    font-size: .8rem;
+  }
+
+  .close {
+    -webkit-appearance: none;
+    padding: 0;
+    cursor: pointer;
+    background: 0 0;
+    border: 0;
+    float: right;
+    font-size: 1rem;
+    font-weight: bold;
+    line-height: 1;
+    color: $light-color;
+    text-shadow: 0 1px 0 $light-color;
+    opacity: .8;
+
+    .material-icons {
+      vertical-align: top;
+    }
+  }
+
+  @at-root &-info{
+    background-color: lighten($info-color, 55);
+    border: 2px solid $info-color;
+    color: $info-color;
+
+    .close {
+      color: $info-color;
+    }
+  }
+
+  &-warning {
+    background-color: lighten($warning-color, 45);
+    border: 2px solid $warning-color;
+    color: $warning-color;
+
+    .close {
+      color: $warning-color;
+    }
+  }
+
+  &-error {
+    background-color: lighten($error-color, 40);
+    border: 2px solid $error-color;
+    color: $error-color;
+
+    .close {
+      color: $error-color;
+    }
+  }
+}
+
+.alert-dismissable,
+.alert-dismissible {
+  padding-right: 35px;
+}

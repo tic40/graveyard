@@ -1,0 +1,27 @@
+merge-default-rules: true
+
+files:
+  include: 'src/sass/**/*.scss'
+  ignore: 'src/sass/spectre/**/*.scss'
+
+rules:
+  indentation:
+    - 1
+    -
+      size: 2
+  class-name-format:
+    - 0
+  variable-name-format:
+    - 0
+  space-before-brace:
+    - 0
+  pseudo-element:
+    - 0
+  no-vendor-prefixes:
+    - 0
+  no-url-domains:
+    - 0
+  no-url-protocols:
+    - 0
+  final-newline:
+    - 0

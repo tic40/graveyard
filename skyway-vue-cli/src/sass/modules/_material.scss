@@ -1,0 +1,124 @@
+.material_wrap {
+  .card-header {
+    padding: .5rem;
+    position: relative;
+
+    .note {
+      color: $gray-color-dark;
+      display: inline-block;
+      float: right;
+      margin: 5px 0 0;
+    }
+  }
+
+  .btn {
+    &.open_new_win {
+      margin-left: 3px;
+      margin-right: 0;
+    }
+  }
+
+  .btn-group {
+    margin-right: 5px;
+
+    .btn {
+      margin-right: 0;
+    }
+  }
+
+  .card-image {
+    border-top: 1px solid $border-color;
+    padding-top: 0;
+  }
+}
+
+.material_box {
+  background: $gray-color-light;
+  height: 100%;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  position: relative;
+
+  &:before {
+    color: darken($gray-color-light, 10);
+    content: '\e54b';
+    font-family: 'material icons';
+    font-size: 8rem;
+    left: 50%;
+    margin-left: -4rem;
+    margin-top: -6rem;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+  }
+
+  object {
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    transform-origin: left top 0;
+    width: 100%;
+    z-index: 2;
+  }
+}
+
+.material_select {
+  background: $light-color;
+  padding: 1.5rem;
+
+  &:before {
+    content: none;
+  }
+}
+
+.material_type {
+  margin-bottom: .5rem;
+  padding: .8rem;
+  position: relative;
+  width: 100%;
+
+  .form_title {
+    padding: .5rem 0;
+    padding-right: 1rem;
+    text-align: right;
+  }
+
+  .type_title {
+    color: $primary-color;
+    font-size: .9rem;
+    font-weight: normal;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+
+  .form-group {
+    margin-bottom: 1rem;
+  }
+
+  .type_content {
+    margin: 0;
+  }
+
+  .curriculum_name {
+    background: lighten($gray-color, 20);
+    font-size: .8rem;
+    padding: .35rem .75rem;
+  }
+}
+
+.cosmo_select {
+  .form-select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: 1px solid darken($border-color, 5);
+    border-radius: 5px;
+    width: 80%;
+  }
+}
+
+// Hide
+.hide-material {
+  height: 0;
+  width: 0;
+}

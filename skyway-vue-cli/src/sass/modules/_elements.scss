@@ -1,0 +1,79 @@
+[v-cloak] {
+  display: none;
+}
+
+.loading {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.offline_alert {
+  left: 50%;
+  margin-left: -300px;
+  position: absolute;
+  text-align: center;
+  top: 20px;
+  width: 600px;
+  z-index: 2222;
+
+  .btn {
+    margin-left: 10px;
+  }
+}
+
+.material-icons {
+  vertical-align: middle;
+
+  .btn & {
+    font-size: 18px;
+    vertical-align: bottom;
+  }
+}
+
+// チャットボックスメッセージリンク
+.message-body {
+  a {
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 250px;
+  }
+
+  .message_link_material {
+    a {
+      @include control-transition();
+      border: .05rem solid $primary-color;
+      color: $primary-color;
+      cursor: pointer;
+      font-size: 0;
+      height: 1.25rem;
+      line-height: 1.75;
+      padding: 0 .5rem;
+      text-align: center;
+      width: 10rem;
+
+      &:before {
+        content: 'クリックして表示';
+        font-size: .7rem;
+        width: auto;
+      }
+
+      &:focus,
+      &:hover {
+        background: lighten($primary-color, 50);
+        color: $primary-color;
+        text-decoration: none;
+      }
+
+      &:active,
+      &.active {
+        background: lighten($primary-color, 50);
+        color: $primary-color;
+      }
+    }
+  }
+}

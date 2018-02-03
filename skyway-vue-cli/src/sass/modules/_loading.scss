@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+
+.loading_wrapper {
+  .loading_phrase_wrap {
+    bottom: 0;
+    padding: 20px;
+    position: absolute;
+
+    .loading_phrase {
+      .en {
+        color: darken($gray-color-dark, 30);
+        display: block;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 1.25rem;
+        font-weight: 700;
+      }
+
+      small {
+        color: $gray-color-dark;
+      }
+    }
+
+    p {
+      margin-bottom: 0;
+    }
+
+    .loading_phrase_headword {
+      color: $gray-color-dark;
+      display: block;
+      font-weight: normal;
+    }
+  }
+
+  .loading_content {
+    left: 50%;
+    margin-left: -16px;
+    margin-top: -40px;
+    position: absolute;
+    top: 50%;
+  }
+
+  .rotate-loader {
+    position: relative;
+
+    &:before,
+    &:after {
+      animation-duration: 850ms;
+      animation-iteration-count: infinite;
+      border-radius: 50%;
+      content: '';
+      display: block;
+      left: 0;
+      position: absolute;
+      top: 0;
+      transform-style: preserve-3d;
+    }
+
+    &:before {
+      animation-name: outerFlip;
+      box-shadow: 0 0 0 5px $secondary-color;
+      height: 32px;
+      width: 32px;
+    }
+
+    &:after {
+      animation-name: innerFlip;
+      box-shadow: 0 0 0 4px darken($secondary-color-dark, 5);
+      height: 26px;
+      left: 3px;
+      top: 3px;
+      width: 26px;
+    }
+  }
+}
+
+@keyframes outerFlip {
+  0% {
+    animation-timing-function: ease-out;
+    opacity: 1;
+    transform: rotateY(0deg);
+  }
+
+  7% {
+    animation-timing-function: ease-out;
+    opacity: 1;
+    transform: rotateY(0deg);
+  }
+
+  60% {
+    animation-timing-function: ease-in-out;
+    opacity: 1;
+    transform: rotateY(180deg);
+  }
+
+  100% {
+    animation-timing-function: ease-in-out;
+    opacity: 1;
+    transform: rotateY(180deg);
+  }
+}
+
+@keyframes innerFlip {
+  0% {
+    animation-timing-function: ease-out;
+    opacity: 1;
+    transform: rotateY(0deg);
+  }
+
+  40% {
+    animation-timing-function: ease-in-out;
+    opacity: 1;
+    transform: rotateY(180deg);
+  }
+
+  100% {
+    animation-timing-function: ease-in-out;
+    opacity: 1;
+    transform: rotateY(180deg);
+  }
+}

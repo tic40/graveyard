@@ -1,0 +1,61 @@
+/*! Spectre.css | MIT License | github.com/picturepan2/spectre */
+// Core variables and mixins
+@import "customs/variables";
+@import "mixins";
+
+// Reset and dependencies
+@import "normalize";
+@import "base";
+
+// Core classes
+@import "typography";
+@import "asian";
+@import "tables";
+@import "customs/buttons";
+@import "forms";
+@import "labels";
+@import "codes";
+@import "media";
+
+// Layout
+@import "layout";
+@import "navbar";
+
+// Components
+@import "accordions";
+@import "customs/alert";
+@import "autocomplete";
+@import "avatars";
+@import "badges";
+@import "breadcrumbs";
+@import "bars";
+@import "cards";
+@import "chips";
+@import "dropdowns";
+@import "empty";
+@import "menus";
+@import "customs/modals";
+@import "navs";
+@import "pagination";
+@import "panels";
+@import "popovers";
+@import "steps";
+@import "tabs";
+@import "tiles";
+@import "toasts";
+@import "tooltips";
+
+// Utility classes
+@import "animations";
+@import "utilities";
+
+// Experimentals
+@import "calendars";
+@import "carousels";
+@import "comparison-sliders";
+@import "filters";
+@import "meters";
+@import "parallax";
+@import "progress";
+@import "sliders";
+@import "timelines";

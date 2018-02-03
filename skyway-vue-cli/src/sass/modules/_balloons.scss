@@ -1,0 +1,142 @@
+// フレーズ Start
+.layout_phrase {
+  &.toast_layout {
+    margin-left: -175px;
+    width: 400px;
+
+    h2 {
+      font-size: 1rem;
+    }
+  }
+}
+
+.phrase_tab {
+  color: $gray-color-dark;
+  margin-top: 15px;
+
+  li {
+    display: table-cell;
+
+    a {
+      color: $gray-color-dark;
+      margin-right: 1px;
+      padding: 3px 5px;
+    }
+  }
+}
+
+.phrase_details {
+  margin: 0;
+  max-height: 400px;
+  overflow-y: scroll;
+
+  li {
+    border-bottom: 1px dotted lighten($gray-color, 15);
+    display: table;
+    padding-bottom: 5px;
+    padding-top: 5px;
+  }
+
+  .phrase_button,
+  .phrase_item {
+    display: table-cell;
+    vertical-align: middle;
+  }
+
+  .phrase_item {
+    padding: 0 5px;
+    text-align: left;
+
+    span {
+      font-size: .8rem;
+      font-weight: bold;
+    }
+
+    span,
+    small {
+      display: block;
+      text-align: left;
+      width: 300px;
+    }
+
+    small {
+      font-size: .6rem;
+    }
+  }
+}
+
+// フレーズ End
+
+// ヘルプ Start
+.layout_help {
+  &.toast_layout {
+    margin-left: -75px;
+  }
+
+  .btn_help_content {
+    margin-bottom: 5px;
+    width: 100%;
+  }
+}
+
+// ヘルプ End
+
+// お問い合わせ Start
+.layout_inquiry {
+  &.toast_layout {
+    margin-left: -100px;
+    width: 240px;
+
+    &:before {
+      left: 52%;
+    }
+
+    strong {
+      display: block;
+      font-size: .8rem;
+      padding-left: 1rem;
+      padding-right: 1rem;
+
+      small {
+        background: $gray-color;
+        color: $light-color;
+        font-size: .6rem;
+        margin: 0 auto;
+        padding: 0 8px;
+        width: 5rem;
+      }
+    }
+
+    .tel {
+      font-size: 1rem;
+      margin-top: 10px;
+
+      small {
+        font-size: .7rem;
+      }
+    }
+
+    small {
+      display: block;
+    }
+  }
+
+  .btn_inquiry_content {
+    height: 2rem;
+    width: 100%;
+
+    &.btn-lg {
+      font-size: .7rem;
+      line-height: 1.25;
+      margin-bottom: 5px;
+      padding: 3px;
+
+      small {
+        font-size: .5rem;
+      }
+    }
+  }
+}
+
+// お問い合わせ End
+
